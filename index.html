@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - Acme Corporation</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <script src="./assets/js/customerSatisfactionSurvey.js"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="content">
+            <div class="imagem_logo">
+                <img src="./assets/images/acme_logo.jpg" alt="ACME Logo">
+            </div>    
+            <div class="titulo">
+                <h2>Acme Corporation</h2>
+                <span>Pesquisa de Satisfação</span>
+            </div>
+            <div class="imagem_logo">
+                <img src="./assets/images/smiles.png" alt="Smiles">
+            </div>  
+        </div>
+    </header>
+
+<div id="form-outer">
+        <p id="description">
+        Se você sobreviveu, queremos a sua opinião!
+    </p>
+    <form id="customer-satisfaction-survey" method="GET" action="./assets/images/unnamed.jpg">
+        <div class="rowTab">
+            <div class="labels">
+                <label id="name-label" for="name">* Nome: </label>
+            </div>
+            <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Wilie E. Coyote" required>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="wecoyote@warner.com">
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="number-label">* Idade: </label>
+            </div>
+            <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Idade">
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label>Quão satisfeito você está com nossos produtos?</label>
+            </div>
+            <div class="rightTab">
+                <select id="dropdown" name="satisfactionLevel" class="dropdown">
+                    <option disabled value>Selecione uma opção:</option>
+                    <option value="verySatisfied">Muito Satisfeito</option>
+                    <option value="satisfied">Satisfeito</option>
+                    <option value="somewhatSatisfied">Um Pouco Satisfeito</option>
+                    <option value="notSatisfied">Não Satisfeito</option>
+                    <option value="other">#%$*#@%$</option>
+                </select>
+            </div>
+        </div>
+        <div class="rowTabfriend">
+            <div class="labels">
+                <label>* Você recomendaria nossos produtos para um amigo?</label>
+            </div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Definitivamente<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>Quem sabe?<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>Não tenho certeza<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>Se eu o odiasse o bastante<input name="radio-buttons" value="4"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="like-most">O que você mais gosta em nossos produtos?</label>
+            </div>
+            <div class="rightTab">
+                <select id="like-most"
+                    name="likeMost" class="dropdown">
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="safety">Segurança</option>
+                    <option value="prices">Preços</option>
+                    <option value="varietyOfOptions">Variedade de Opções</option>
+                    <option value="customerService">Serviço ao Consumidor</option>
+                    <option value="fastDelivery">Entrega Rápida</option>
+                </select>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Algum comentário ou sugestão?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Coloque o seu comentário educado aqui..."></textarea>
+            </div>
+        </div>
+        <button id="submit" type="submit">Enviar</button>
+    </form>
+</div>
+    <footer class="footer">
+        <span class="copyleft">&copy </span>
+        <span> Antonio Slivak 2021</span>
+    </footer>
+</body>
+</html>
